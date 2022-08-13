@@ -1,0 +1,10 @@
+.box {
+  border-radius: rem(10px);
+  background: rgba($black, .05);
+  padding: rem(30px);
+
+  @include desktop-up {
+    border-radius: rem(20px);
+    padding: rem(45px) rem(60px);
+  }
+}

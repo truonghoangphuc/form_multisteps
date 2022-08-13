@@ -1,0 +1,48 @@
+button,
+a,
+input[type="button"],
+input[type="submit"] {
+  
+  &.btn {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: rem(16px);
+    font-weight: 600;
+    transition: box-shadow .3s ease-out, background .3s ease-out;
+    display: inline-block;
+    text-decoration: none;
+
+    &-default {
+      border: solid 1px $secondary;
+      background: $secondary;
+      color: $white;    
+      box-shadow: 5px 5px 0 0 rgba(55,55,55, .2);
+      
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 0 0 rgba(55,55,55, .2);
+        background: $white;
+        color: $secondary;
+      }      
+    }
+
+    &-secondary {
+      border: solid 1px $secondary;
+      background: $white;
+      color: $secondary;    
+      box-shadow: 5px 5px 0 0 rgba(55,55,55, .2);
+      
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 0 0 rgba(55,55,55, .2);
+        background: $secondary;
+        color: $white;
+      }      
+    }
+
+    @include tablet-up {
+      padding: 12px 24px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.form-steps__item 
+  h2.form-heading Tell us about yourself
+  form.box.text-left(method="post",action="#step_3",data-thp-validation,data-calculate)
+    .form-group
+      label(for="field_name") Name
+      input.form-control(name="field_name",type="text",required,data-error-require="Please input your name")
+    .form-group
+      label(for="field_age") Age
+      input.form-control(name="field_age",type="text",required,pattern="^[0-9]*$",data-error-require="Please input your age",data-error-pattern="Please input number only")
+    .form-group
+      label(for="field_live") Where do you live
+      select.form-control(name="field_live")
+        option(value="HKD", data-rate=1, selected) Hong Kong
+        option(value="USD", data-rate=2) USA
+        option(value="AUD", data-rate=3) Australia
+    .form-group
+      label(for="packageStandard")
+        input.form-control#packageStandard(name="field_package",type="radio",value="1",checked,data-name="Standard")
+        span Standard
+      label(for="packageSafe")
+        input.form-control#packageSafe(name="field_package",type="radio",value="1.5",data-name="Safe")
+        span#safe(data-template="Safe (+${addSafe}, 50%)") Safe
+      label(for="packageSuper")
+        input.form-control#packageSuper(name="field_package",type="radio",value="1.75",data-name="Super Safe")
+        span#superSafe(data-template="Super Safe (+${addSuperSafe}, 75%)") Super Safe
+    .form-group
+      #output.strong.big.text-center(data-template="Your premium is: ${premium}")
+    .form-group.cta.text-center
+      button.btn.btn-secondary.btn-prev Back
+      button.btn.btn-default.btn-submit(type="submit") Start

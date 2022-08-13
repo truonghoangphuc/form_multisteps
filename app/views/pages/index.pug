@@ -1,0 +1,12 @@
+extends ../layouts/layout
+
+block vars
+  - title = "Form - Multi steps";
+  - keyword = "form, multi steps, javascript";
+  - description = "Multi steps form with pug, scss, javascript - webpack";
+
+block main
+  .form-steps(data-thp-steps)
+    include ../widgets/form_1.pug
+    include ../widgets/form_2.pug
+    include ../widgets/form_3.pug

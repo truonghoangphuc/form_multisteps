@@ -1,0 +1,31 @@
+// get scheme at https://paletton.com/
+
+:root {
+  --primary: #feeb0d;
+  --secondary: #19233e;
+  --success: #08882F;
+  --danger: #B80F0B;
+  --rem-base: 16px;
+}
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+$danger: var(--danger);
+$success: var(--success);
+$defaulfFontSize: 16px;
+
+$white: white;
+$black: black;
+
+// grid
+$screen-xxs: 320px;
+$screen-xs: 414px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xlg: 1200px;
+$screen-xxlg: 1920px;
+$screen-xs-up: ($screen-sm - 1px);
+$screen-sm-up: ($screen-md - 1px);
+$screen-md-up: ($screen-lg - 1px);
+$screen-hd-up: ($screen-xxlg - 1px);

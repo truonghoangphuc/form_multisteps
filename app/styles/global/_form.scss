@@ -1,0 +1,43 @@
+.form {
+
+  &-heading {
+    font-size: rem(24px);
+    line-height: 1;
+    margin: 0 0 rem(20px);
+  }
+
+  &-group {
+    display: block;
+    margin: 0 0 rem(20px);
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin: 0 0 rem(10px);
+    }
+  }
+
+  &-control {
+    
+    &:not([type="radio"]) {      
+      &:not([type="checkbox"]) {
+        padding: rem(8px) rem(15px);
+        border-radius: rem(6px);
+        border: solid 1px rgba($black, .4);
+        width: 100%;
+      }      
+    }
+  }
+
+  @include tablet-up {
+    &-heading {
+      font-size: rem(36px);
+    }
+  }
+
+  @include desktop-up {
+    &-heading {
+      font-size: rem(48px);
+    }
+  }
+}

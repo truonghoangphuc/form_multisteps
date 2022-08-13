@@ -1,0 +1,16 @@
+extends ../layouts/layout
+
+block vars
+  - title = "Form - Multi steps";
+  - keyword = "form, multi steps, javascript";
+  - description = "Multi steps form with pug, scss, javascript - webpack";
+
+block main  
+  .content
+    .box.text-center
+      h2.heading Ooops
+      .form-group 
+        p Your age is over our accepted limit.
+        p We are sorry but we canot insure you now
+      .form-group.cta
+        a.btn.btn-default(href='/') OK :(

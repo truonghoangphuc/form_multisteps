@@ -1,0 +1,20 @@
+.form-steps__item 
+  h2.form-heading Summary
+  form.box(method="post",action="#final")
+    .template#summaryEl
+    .form-group.cta
+      button.btn.btn-secondary.btn-prev Back
+      button.btn.btn-default.btn-reset Buy
+  script#summary(type="text/x-template")
+    .form-group
+      p Name: 
+        strong ${name}
+      p Age: 
+        strong ${age}
+      p Where do you live: 
+        strong ${live}
+      p Package: 
+        strong ${package}
+      p Premium: 
+        strong ${premium}
+

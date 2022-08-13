@@ -1,0 +1,16 @@
+@import "../variables";
+
+.error {
+  color: $danger;
+  display: none;
+}
+
+.invalid {
+  color: $danger;
+  border-color: $danger !important;
+
+  & + .error {
+    display: block;
+    padding: rem(15px);
+  }
+}

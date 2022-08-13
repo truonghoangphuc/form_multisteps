@@ -1,0 +1,28 @@
+.text {
+
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+}
+
+.disable {
+  pointer-events: none;
+  cursor: default;
+  opacity: .5;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.big {
+  font-size: 200%;
+}

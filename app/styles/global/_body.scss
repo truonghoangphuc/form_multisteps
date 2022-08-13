@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #{$secondary};
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  min-height: calc(100vh - 108px);
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.heading {
+  font-size: rem(24px);
+  line-height: 1;
+}
+
+
+.content {
+  
+  .box {
+    width: 80%;
+    max-width: rem(540px);
+    margin: rem(50px) auto 0;
+  }
+
+  .cta {
+    padding: rem(20px) 0;
+
+    .btn {
+      min-width: rem(200px);
+    }
+  }
+}
+
+@include tablet-up {
+  .heading {
+    font-size: rem(36px);
+  }
+}
+
+@include desktop-up {
+  .heading {
+    font-size: rem(48px);
+  }
+}

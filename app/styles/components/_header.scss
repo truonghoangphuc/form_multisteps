@@ -1,0 +1,16 @@
+header {
+  background: $secondary;
+  color: $white;
+  padding: rem(15px) 0;
+  font-size: 0;
+  
+  .brand {
+    height: rem(24px);
+    display: inline-block;
+    font-size: 0;
+
+    img {
+      max-height: 100%;
+    }
+  }
+}
